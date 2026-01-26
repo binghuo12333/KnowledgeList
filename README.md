@@ -98,8 +98,10 @@
 
 
 ## 📈 近期更新计划
-
-
+1、完善知识工程部分相关内容
+2、调研有关AI低代码产品（ jeecgboot）
+3、同步学习项目经理
+4、web上面的各种ai产品试用
 
 ## 📞 联系我
 - GitHub: [binghuo12333](https://github.com/binghuo12333)
