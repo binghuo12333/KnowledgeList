@@ -53,6 +53,7 @@ python -m fastchat.serve.openai_api_server \
   --host 0.0.0.0 \
   --port 8000 \
   --load-4bit
+```
 
 ### 2. 多模态模型（Qwen-VL/Audio 2.0）
 <div align="left">
@@ -99,6 +100,7 @@ nohup python -m fastchat.serve.gradio_web_server \
   --server-port 7860 > webui.log 2>&1 &
 
 # 访问地址：http://localhost:7860
+```
 
 3. 嵌入模型（Qwen-Embedding V2）
 <div align="left"><img src="https://img.shields.io/badge/Embedding-V2-9cf" alt="Embedding"><img src="https://img.shields.io/badge/Dimension-768/1024-important" alt="Dimension"><img src="https://img.shields.io/badge/Context-8K-success" alt="Context"></div>
@@ -109,8 +111,8 @@ nohup python -m fastchat.serve.gradio_web_server \
 🎯 数学 / 代码专用版，垂直领域效果优化
 
 🚀 快速使用
-基础嵌入生成
-python运行
+```
+基础嵌入生成——python运行
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """Qwen-Embedding-V2 文本嵌入示例"""
@@ -187,6 +189,7 @@ def batch_get_embeddings(texts: list, batch_size: int = 32) -> list:
 # 使用示例
 # large_text_list = ["文本1", "文本2", ..., "文本10000"]
 # all_embeddings = batch_get_embeddings(large_text_list, batch_size=32)
+```
 
 4. 代码模型（Qwen-Coder 2）
 <div align="left"><img src="https://img.shields.io/badge/Coder-2.x-9cf" alt="Coder"><img src="https://img.shields.io/badge/Languages-20%2B-important" alt="Languages"><img src="https://img.shields.io/badge/Context-8K-success" alt="Context"></div>
@@ -197,6 +200,7 @@ def batch_get_embeddings(texts: list, batch_size: int = 32) -> list:
 🎯 编程题解答，支持 ACM/OJ 格式
 
 🚀 快速启动
+```
 1. 命令行代码对话——bash运行
 # Qwen-Coder-2-7B-Chat（4bit量化）
 python -m fastchat.serve.cli \
@@ -231,6 +235,7 @@ python -m fastchat.serve.cli \
   --load-4bit \
   --trust-remote-code \
   --temperature 0.0
+```
 
 5. 重排序模型（Qwen-Rerank）
 <div align="left"><img src="https://img.shields.io/badge/Rerank-M3-9cf" alt="Rerank"><img src="https://img.shields.io/badge/Latency-<10ms-important" alt="Latency"><img src="https://img.shields.io/badge/Context-512-success" alt="Context"></div>
@@ -241,6 +246,7 @@ python -m fastchat.serve.cli \
 🎯 适配 ES/FAISS/PGVector 等检索引擎
 
 🚀 快速使用
+```
 基础重排序示例——python运行
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
@@ -347,4 +353,4 @@ def rag_pipeline(query: str, top_k: int = 3) -> str:
     # 调用Qwen-2生成回答
     response = generate_answer(prompt)
     return response
-
+```
